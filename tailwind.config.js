@@ -4,6 +4,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'btn-yellow': "#f1c40f"
+      }
     },
   },
   plugins: [],
