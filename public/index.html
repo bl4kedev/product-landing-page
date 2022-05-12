@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="./css/tailwind.css">
 </head>
 <body>
-    <div class="container text-center">
+    <div class="container text-center mx-auto">
         <!-- HEADER -->
-        <header id="menu" class="w-full my-3 px-6">
-            <div class="py-1">
-                <img src="./imgs/logo.png" alt="">
+        <header id="menu" class="w-full my-3 px-6 sm:flex sm:justify-between md:mb-8">
+            <div class="py-1 sm:w-2/4 md:w-2/5">
+                <img class="w-full" src="./imgs/logo.png" alt="">
             </div>
-            <nav>
-                <ul>
+            <nav class="md:w-2/5 md:flex md:items-center">
+                <ul class="md:flex md:justify-between md:w-full">
                     <li><a href="#">Features</a></li>
                     <li><a href="#">How It Works</a></li>
                     <li><a href="#">Pricing</a></li>
@@ -28,39 +28,63 @@
         <section class="w-full h-40 mb-12">
             <h2 class="font-bold text-2xl mb-4">Handcrafted, home-made masterpieces</h2>
             <div class="flex flex-col justify-center">
-                <input class="block w-3/4 p-0.5 border-2 border-gray-400 mx-auto mb-4" type="text" placeholder="Enter a email">
-                <button class="btn">GET STARTED</button>
+                <input class="block w-3/4 p-0.5 border-2 border-gray-400 mx-auto mb-4 sm:w-3/6" type="text" placeholder="Enter a email">
+                <button class="btn sm:w-1/6">GET STARTED</button>
             </div>
         </section>
 
         <!-- MAIN CONTENT -->
-        <div>
+        <div class="w-11/12 mx-auto sm:flex sm:flex-col sm:items-center">
             <!-- FEATURES SECTION -->
             <section id="features">
-                <div class="mb-12">
-                    <h2 class="font-bold text-3xl">Premium Materials</h2> 
-                    <p class="text-sm">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase. </p>
+                <div class="mb-14 sm:flex">
+                    <div class="w-20 h-20 m-8 hidden sm:flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="m-8">
+                        <h2 class="font-bold text-3xl sm:text-left">Premium Materials</h2> 
+                        <p class="text-sm sm:text-left">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase. </p>
+                    </div>
+                    
                 </div>
 
-                <div class="mb-14">
-                    <h2 class="font-bold text-3xl">Quality Assurance</h2>
-                    <p class="text-sm">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                <div class="mb-14 sm:flex">
+                    <div class="w-20 h-20 hidden m-8 sm:flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z" />
+                        </svg>
+                    </div>
+                    <div class="m-8">
+                        <h2 class="font-bold text-3xl sm:text-left">Quality Assurance</h2>
+                        <p class="text-sm sm:text-left">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                    </div>
                 </div>
                 
-                <div class="mb-14">
-                    <h2 class="font-bold text-3xl">Fast Shipping</h2>
-                    <p class="text-sm">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied. </p>
+                <div class="mb-14 sm:flex">
+                    <div class="w-20 h-20 m-8 hidden sm:flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                            <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z" />
+                        </svg>
+                    </div>
+                    <div class="m-8">
+                        <h2 class="font-bold text-3xl sm:text-left">Fast Shipping</h2>
+                        <p class="text-sm sm:text-left">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied. </p>
+                    </div>
+                    
                 </div>
             </section>
 
             <!-- HOW IT WORKS SECTION -->
-            <section id="how-it-works" class="mb-16">
-                <iframe width="384" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            <section id="how-it-works" class="w-3/4 mx-auto mb-16">
+                <iframe class="w-full" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
             </section>
 
             <!-- PRICING SECTION -->
-            <section id="pricing">
+            <section id="pricing" class="sm:w-full sm:flex sm:space-x-10">
                 <div class="card-pricing">
                     <h3 class="p-3 bg-gray-300 font-bold">TENOR TROMBONE</h3>
                     <p class="font-bold text-2xl my-4">$600</p>
